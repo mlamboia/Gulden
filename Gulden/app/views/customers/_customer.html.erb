@@ -1,0 +1,6 @@
+<%= turbo_frame_tag dom_id(customer) do %>
+  <div class='card card-body'>
+    <div><%= customer.name %></div>
+    <div><%= button_to 'Destroy', customer, method: :delete %></div>
+  </div>
+<% end %>

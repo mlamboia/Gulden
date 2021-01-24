@@ -1,0 +1,12 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Customers</h1>
+
+<%= turbo_stream_from 'customers' %>
+
+<%= render 'form', customer: @customer %>
+<br/><br/>
+
+<%= turbo_frame_tag 'customers' do %>
+  <%= render @customers %>
+<% end %>
